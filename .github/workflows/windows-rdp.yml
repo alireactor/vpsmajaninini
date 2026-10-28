@@ -24,7 +24,7 @@ jobs:
 
       - name: 3. Install & Connect Tailscale VPN
         env:
-          TAILSCALE_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
+          TAILSCALE_AUTHKEY: ${{ tskey-auth-kT4hwKQKZT11CNTRL-ZXcqJHZA8mFc8scHyyf8mFStos2exEydf }}
         run: |
           # Download and install Tailscale silently
           Invoke-WebRequest "https://pkgs.tailscale.com/stable/tailscale-setup-latest-amd64.msi" -OutFile "C:\tailscale.msi"
